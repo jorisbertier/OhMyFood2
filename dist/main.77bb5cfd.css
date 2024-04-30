@@ -338,6 +338,72 @@ header .header__explore p {
     margin-right: 0;
   }
 }
+footer {
+  background: #353535;
+  color: white;
+  padding: 22px;
+}
+footer img {
+  filter: invert(100%);
+  padding-inline-start: 10px;
+  width: 137.58px;
+  height: 27px;
+  opacity: 0px;
+}
+footer ul {
+  list-style: none;
+  padding-inline-start: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30.75px;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+footer ul a li {
+  font-weight: 300;
+}
+footer ul a .menu--bold {
+  font-weight: 500;
+}
+footer ul a i {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.footer__restaurant {
+  margin-top: -45px;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  footer img {
+    height: 18px;
+  }
+  footer ul {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+  }
+  footer ul a:nth-child(2) {
+    margin-right: 20px;
+  }
+  footer ul a:nth-child(4) {
+    margin-right: 80px;
+  }
+  footer ul i {
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+  }
+}
 /* Component */
 .nav__main {
   display: flex;
