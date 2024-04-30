@@ -1,0 +1,189 @@
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 95px;
+    background-color: $background-secondary-color;
+
+    &-title {
+        margin-left: 5%;
+    }
+        .restaurants__wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 30px;
+    
+            a {
+                display: flex;
+                text-decoration: none;
+                color: $main-color;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 15px;
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            &--card {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: relative;
+    
+                img {
+                    width: 100%;
+                    height: 231px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    object-fit: cover;
+                }
+                &-new {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 10%;
+                    left: 64%;
+                    background-color: $green-light-color;
+                    height: 29px;
+                    width: 80px;
+                    color: $green-color;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border-radius: 2px;
+                }
+            }
+
+            &--card-content {
+                display: flex;
+                
+                &-txt:nth-child(1) {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 70%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    line-height: 0.3;
+
+                    span {
+                        font-size: 17px;
+                        font-weight: 300;
+                    }
+                }
+                &-txt:nth-child(2) {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    width: 30%;
+                    padding: 10px;
+
+                    .fa-regular, .fa-solid {
+                        font-size: 22px;
+                    }
+                }
+                &-txt {
+                    
+                }
+            }
+
+    }
+}
+.heart__container {
+    position: relative;
+    padding-right: 10px;
+    .heart--card {
+        -webkit-text-stroke: 0.05rem #fff;
+        /* Réduit l'épaiseur des contours du coeur vide */
+    }
+    .heart {
+        cursor: pointer;
+    }
+
+    .heart:hover {
+        background: -webkit-linear-gradient(60deg, #ff79da, #9356dc);
+        background: -o-linear-gradient(60deg, #ff79da, #9356dc);
+        background: linear-gradient(30deg, #ff79da, #9356dc);
+        /* Couleur des coeurs */
+        -webkit-background-clip: text;
+        /* Applique la couleur du background au texte (les coeurs sont du texte) */
+        color: transparent;
+        /* Applique la couleur du background au texte (les coeurs sont du texte) */
+        -webkit-text-stroke: 0;
+        /* Supprime le text-stroke au survol */
+    }
+
+    .heart:hover + .heart-full {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
+        /* Permet l'apparition du coeur plein */
+    }
+    
+    .heart-full {
+        padding-right: 10px;
+        position: absolute;
+        /* Pour que les coeurs aient la meme position */
+        top: 0;
+        right: 0;
+        background: -webkit-linear-gradient(60deg, #ff79da, #9356dc);
+        background: -o-linear-gradient(60deg, #ff79da, #9356dc);
+        background: linear-gradient(30deg, #ff79da, #9356dc);
+        /* Couleur des coeurs */
+        -webkit-background-clip: text;
+        /* Applique la couleur du background au texte (les coeurs sont du texte) */
+        color: transparent;
+        /* Applique la couleur du background au texte (les coeurs sont du texte) */
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+        /* Permet l'apparition du coeur plein */
+        -webkit-transition: -webkit-transform 300ms ease-in-out;
+        transition: -webkit-transform 300ms ease-in-out;
+        -o-transition: transform 300ms ease-in-out;
+        transition: transform 300ms ease-in-out;
+        transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+    }
+}
+
+@media (min-width: 425px) {
+    .restaurants {
+        .restaurants__wrapper {
+            &--card {
+                &-new {
+                    top: 5%;
+                    left: 77%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .restaurants {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 60px;
+
+        &-title {
+            margin-left: 0;
+            text-align: left;
+            width: 72%;
+            padding-bottom: 10px;
+        }
+        .restaurants__wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+            
+            a {
+                flex-basis: calc(45% - 15px);
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}

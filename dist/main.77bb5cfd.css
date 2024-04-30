@@ -75,6 +75,103 @@ header .header__explore p {
     font-weight: 300;
   }
 }
+.wrapper__search {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper__search-title {
+  margin-left: 5%;
+}
+.wrapper__search .wrapper__section {
+  width: 100%;
+}
+.wrapper__search .wrapper__section .wrapper__search__section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.wrapper__search .wrapper__section .wrapper__search__section--number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  width: 24px;
+  height: 24px;
+  gap: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 23px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.wrapper__search .wrapper__section .wrapper__search__section--button i {
+  color: #7E7E7E;
+}
+.wrapper__search .wrapper__section .wrapper__search__section--button .wrapper__search__section--button--violet {
+  color: #9356DC;
+}
+
+@media (min-width: 390px) {
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 28px;
+  }
+}
+@media (min-width: 455px) {
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 35px;
+  }
+}
+@media (min-width: 520px) {
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 38px;
+  }
+}
+@media (min-width: 610px) {
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 44px;
+  }
+}
+@media (min-width: 700px) {
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 49px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 54px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper__search-title {
+    margin-left: 14%;
+  }
+  .wrapper__search .wrapper__section {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper__search .wrapper__section .wrapper__search__section {
+    width: 230px;
+  }
+  .wrapper__search .wrapper__section .wrapper__search__section--button p {
+    font-size: 11px;
+  }
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 13px;
+  }
+}
+@media (min-width: 1140px) {
+  .wrapper__search .wrapper__section .wrapper__search__section {
+    width: 330px;
+  }
+  .wrapper__search .wrapper__section .wrapper__search__section--number {
+    left: 25px;
+  }
+}
 /* Component */
 .nav__main {
   display: flex;
