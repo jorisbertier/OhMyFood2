@@ -173,6 +173,182 @@ header .header__explore p {
     left: 25px;
   }
 }
+.main__palette {
+  background-color: #F6F6F6;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  position: relative;
+  width: 100%;
+  top: -45px;
+}
+.main__palette-title {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+.main__palette-title-text {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+}
+.main__palette-title-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+.main__palette-menu-heading {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.main__palette-menu-heading-text {
+  margin-left: 5%;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.main__palette-menu-heading-border {
+  position: absolute;
+  bottom: -5px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  z-index: 1;
+  margin-left: 5%;
+}
+.main__palette-menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__palette-menu-article {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.main__palette-menu-article:hover .main__palette-menu-article-description {
+  text-overflow: ellipsis;
+}
+.main__palette-menu-article-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__palette-menu-article-title {
+  font-size: 15px;
+  font-weight: 500;
+  height: 30px;
+  margin-bottom: -10px;
+}
+.main__palette-menu-article-description {
+  font-size: 12px;
+  font-weight: 300;
+  height: 40%;
+}
+.main__palette-menu-article .main__palette-menu-container {
+  display: flex;
+}
+.main__palette-menu-article .main__palette-menu-container-price {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+  margin-bottom: 14px;
+  font-size: 15.04px;
+  font-weight: 700;
+  line-height: 17.63px;
+}
+.main__palette-menu-article .main__palette-menu-container-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99E2D0;
+  width: 0;
+  position: relative;
+  height: 70px;
+  visibility: hidden;
+  transition: 0.2s ease-in;
+}
+.main__palette-menu-article .main__palette-menu-container-color i {
+  color: white;
+  width: 20px;
+  height: 20px;
+  top: 24.97px;
+}
+
+.main__palette-menu-article:hover .main__palette-menu-container-color {
+  visibility: visible;
+  width: 59px;
+}
+
+@media (min-width: 376px) {
+  .main__palette-menu-article-title {
+    font-size: 18px;
+  }
+  .main__palette-menu-article-description {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  #main__palette {
+    display: flex;
+    justify-content: center;
+  }
+  #main__palette .main__palette {
+    width: 80%;
+  }
+  #main__palette .main__palette-title {
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  #main__palette .main__palette-title-text {
+    font-size: 30px;
+  }
+  #main__palette .main__palette-title-icon i {
+    font-size: 22px;
+  }
+  #main__palette .main__palette-menu-heading-text {
+    margin-left: 15%;
+  }
+  #main__palette .main__palette-menu-heading-border {
+    margin-left: 15%;
+  }
+  #main__palette .main__palette-menu-item {
+    justify-content: center;
+  }
+  #main__palette .main__palette-menu-article {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .main__palette-menu-article {
+    transition: all 0.7s ease-in-out;
+    transform-origin: left;
+  }
+  .main__palette-menu-article:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .main__palette-menu-article:nth-child(3) {
+    transition-delay: 2.4s;
+  }
+  .main__palette-menu-article:nth-child(4) {
+    transition-delay: 0.6s;
+  }
+}
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -439,6 +615,17 @@ footer ul a i {
 }
 
 /* Restaurants */
+.header__palette img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .header__palette img {
+    height: 500px;
+  }
+}
 /* Button */
 .button-radient {
   width: 218px;
