@@ -1,11 +1,16 @@
 /* Utils */
-
 @import "../../assets/utils/variables.scss";
 
-/*Fonts / base */
-@import '../../assets/layout/body.scss';
+/* Fonts*/
 @import '../../assets/fonts/font.scss';
 
+/* Base */
+@import '../../assets/layout/body.scss';
+
+
+/* Layout */
+@import '../../assets/layout/header.scss';
+@import '../../assets/layout/footer.scss';
 
 /* Component */
 @import "../../assets/components/navbar/navbar.scss";
