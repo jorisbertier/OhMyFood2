@@ -387,8 +387,9 @@ header .header__explore p {
   width: 100%;
   gap: 30px;
 }
-.restaurants .restaurants__wrapper a {
+.restaurants .restaurants__wrapper--inner {
   display: flex;
+  flex-direction: row;
   text-decoration: none;
   color: black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -396,6 +397,9 @@ header .header__explore p {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+}
+.restaurants .restaurants__wrapper a {
+  text-decoration: none;
 }
 .restaurants .restaurants__wrapper--card {
   display: flex;
@@ -462,7 +466,7 @@ header .header__explore p {
 .heart__container .heart {
   cursor: pointer;
 }
-.heart__container .heart:hover {
+.heart__container .heart:active {
   background: -webkit-linear-gradient(60deg, #ff79da, #9356dc);
   background: -o-linear-gradient(60deg, #ff79da, #9356dc);
   background: linear-gradient(30deg, #ff79da, #9356dc);
@@ -474,7 +478,7 @@ header .header__explore p {
   -webkit-text-stroke: 0;
   /* Supprime le text-stroke au survol */
 }
-.heart__container .heart:hover + .heart-full {
+.heart__container .heart:active + .heart-full {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -531,7 +535,7 @@ header .header__explore p {
     flex-wrap: wrap;
     width: 80%;
   }
-  .restaurants .restaurants__wrapper a {
+  .restaurants .restaurants__wrapper--inner {
     flex-basis: calc(45% - 15px);
     margin-left: 0;
     margin-right: 0;
