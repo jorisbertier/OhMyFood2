@@ -45,6 +45,11 @@ footer {
 }
 
 @media (min-width: 1024px) {
+
+    .footer__restaurant {
+        margin-top: -15px;
+    }
+
     footer {
         display: flex;
         align-items: flex-end;
