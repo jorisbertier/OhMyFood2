@@ -556,8 +556,6 @@ footer img {
   filter: invert(100%);
   padding-inline-start: 10px;
   width: 137.58px;
-  height: 27px;
-  opacity: 0px;
 }
 footer ul {
   list-style: none;
@@ -590,19 +588,22 @@ footer ul a i {
 @media (min-width: 1024px) {
   footer {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: row-reverse;
+    height: 110px;
+    padding: 30px, 25px, 30px, 25px;
   }
   footer img {
     height: 18px;
+    margin-bottom: 20px;
   }
   footer ul {
     display: flex;
-    gap: 10px;
-    font-size: 12px;
+    gap: 15px;
+    font-size: 14px;
   }
   footer ul a:nth-child(2) {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   footer ul a:nth-child(4) {
     margin-right: 80px;
