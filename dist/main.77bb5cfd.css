@@ -558,6 +558,9 @@ header .header__explore p {
     margin-left: 0;
     margin-right: 0;
   }
+  .restaurants .restaurants__wrapper--card-content-txt:nth-child(1) {
+    margin-left: 20px;
+  }
 }
 footer {
   background: #353535;
