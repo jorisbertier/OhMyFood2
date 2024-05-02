@@ -126,10 +126,17 @@
             display: flex;
             justify-content: center;
             .wrapper__search__section  {
-                width: 230px;
+                width: 25%;
                 &--button {
+                    display: flex;
+                    justify-content: left;
+                    gap:20px;
                     p {
-                        font-size: 11px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    i {
+                        margin-left: 20px;
                     }
                 }
                 &--number {
@@ -144,7 +151,7 @@
     .wrapper__search {
         .wrapper__section {
             .wrapper__search__section {
-                width: 330px;
+                width: 25%;
 
                 &--number {
                     left: 25px;

@@ -210,10 +210,19 @@ header .header__explore p {
     justify-content: center;
   }
   .wrapper__search .wrapper__section .wrapper__search__section {
-    width: 230px;
+    width: 25%;
+  }
+  .wrapper__search .wrapper__section .wrapper__search__section--button {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
   }
   .wrapper__search .wrapper__section .wrapper__search__section--button p {
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .wrapper__search .wrapper__section .wrapper__search__section--button i {
+    margin-left: 20px;
   }
   .wrapper__search .wrapper__section .wrapper__search__section--number {
     left: 13px;
@@ -221,7 +230,7 @@ header .header__explore p {
 }
 @media (min-width: 1140px) {
   .wrapper__search .wrapper__section .wrapper__search__section {
-    width: 330px;
+    width: 25%;
   }
   .wrapper__search .wrapper__section .wrapper__search__section--number {
     left: 25px;
