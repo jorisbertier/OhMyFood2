@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    animation: loaderFadeOut 4s forwards;
+    animation: loaderFadeOut 3s forwards;
 }
 
 @keyframes loaderFadeOut {
@@ -33,7 +33,7 @@
 
 .hidden {
     visibility: hidden;
-    animation: resetVisibility 0s 4s forwards;
+    animation: resetVisibility 0s 3s forwards;
 }
 
 @keyframes resetVisibility {
