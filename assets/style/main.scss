@@ -1,0 +1,31 @@
+/* Utils */
+@import "../utils/variables.scss";
+
+/* Fonts*/
+@import '../fonts/font.scss';
+
+/* Animations */
+@import '../animations/animations.scss';
+@import '../animations/loader.scss';
+
+/* Base */
+@import '../layout/body.scss';
+
+
+/* Layout */
+@import '../layout/header.scss';
+@import '../layout/firstsection.scss';
+@import '../layout/menu.scss';
+@import '../layout/restaurant.scss';
+@import '../layout/footer.scss';
+
+/* Component */
+@import "../components/navbar/navbar.scss";
+
+/* Restaurants */
+@import '../restaurants/header.scss';
+
+/* Button */
+@import '../components/buttons/button.scss';
+
+
