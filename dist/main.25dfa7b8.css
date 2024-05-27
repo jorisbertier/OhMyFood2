@@ -45,11 +45,38 @@
   -ms-transform: scale(0);
   transform: scale(0);
   /* Permet l'apparition du coeur plein */
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  -o-transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+/*Animations progressive page restaurants*/
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main__palette-menu-article {
+  animation: slideIn 1s ease-in-out forwards;
+  opacity: 0;
+  transform-origin: left;
+}
+
+.main__palette-menu-article:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.main__palette-menu-article:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.main__palette-menu-article:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.main__palette-menu-article:nth-child(4) {
+  animation-delay: 1.5s;
 }
 
 .loader {
@@ -457,44 +484,6 @@ header .header__explore p {
     overflow: visible;
   }
 }
-@keyframes slideIn {
-  from {
-    transform: translateX(-23%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes slideIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.main__palette-menu-article {
-  animation: slideIn 1s ease-in-out forwards;
-  opacity: 0;
-  transform-origin: left;
-}
-
-.main__palette-menu-article:nth-child(1) {
-  animation-delay: 0.6s;
-}
-
-.main__palette-menu-article:nth-child(2) {
-  animation-delay: 0.9s;
-}
-
-.main__palette-menu-article:nth-child(3) {
-  animation-delay: 1.2s;
-}
-
-.main__palette-menu-article:nth-child(4) {
-  animation-delay: 1.5s;
-}
-
 .restaurants {
   display: flex;
   flex-direction: column;
